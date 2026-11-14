@@ -1,5 +1,5 @@
-abc = list("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
-encoded = [str(i).zfill(2) for i in range(1, 27)]
+abc = list("aábcčdďeéěfghiíjklmnňoópqrřsštťuúůvwxyýzž")
+encoded = [str(i).zfill(2) for i in range(1, 41)]
 
 def encode_bf_code(text):
     result = []
