@@ -13,7 +13,8 @@ def create_bf_code(number, title="file.bf"):
 
     calculation = math.factorial(number)
 
-    with open(title, "w", encoding="utf-8") as f:
-        f.write(f"!{calculation}!BF!")
+    # Absolutní cesta k souboru
+    path = os.path.join(os.getcwd(), title)
 
-    print(f"BF file created successfully: {os.path.abspath(title)}")
+    with open(path, "w", encoding="utf-8") as f:
+        f.write(f"!{calculation}!BF!")
