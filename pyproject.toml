@@ -3,19 +3,9 @@ requires = ["setuptools>=61.0.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "batchfactorial-bestrohlik"  # Název, pod kterým bude na PyPI (musí být unikátní!)
-version = "0.0.1"
-authors = [
-    { name = "Tvé Jméno", email = "tvuj@email.com" }
-]
-description = "Jednoduchá ukázková knihovna pro matematika"
-readme = "README.md"
+name = "batchfactorial"
+version = "1.0.0"  # <--- Tady nastavuješ verzi!
 requires-python = ">=3.8"
-classifiers = [
-    "Programming Language :: Python :: 3",
-    "License :: OSI Approved :: MIT License",
-    "Operating System :: OS Independent",
+dependencies = [
+    # Tady můžeš mít případné závislosti, pokud nějaké máš
 ]
-
-[project.urls]
-Homepage = "https://github.com/tvuj-github/mojeknihovna"
