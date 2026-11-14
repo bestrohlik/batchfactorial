@@ -3,7 +3,7 @@ import sys
 
 sys.set_int_max_str_digits(0)
 
-def create_bf_code(cislo, nazev_souboru="soubor.bf"):
+def create_bf_code(cislo, "soubor.bf"):
     # Spočítá faktoriál z čísla, které předáš do funkce
     calculation = math.factorial(cislo)
 
