@@ -1,17 +1,19 @@
 import math
 import sys
+import os
 
 sys.set_int_max_str_digits(0)
 
 def create_bf_code(number, title="file.bf"):
-    # Spočítá faktoriál
+    if not isinstance(number, int) or number < 0:
+        raise ValueError("Number must be a non-negative integer!")
+
+    if not title.endswith(".bf"):
+        title += ".bf"
+
     calculation = math.factorial(number)
 
-    # Vytvoří jeden soubor
     with open(title, "w", encoding="utf-8") as f:
-        f.write("!")
-        f.write(str(calculation))
-        f.write("!BF!")
+        f.write(f"!{calculation}!BF!")
 
-# Použití:
-create_bf_code(5)
+    print(f"BF file created successfully: {os.path.abspath(title)}")
